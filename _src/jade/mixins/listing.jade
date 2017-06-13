@@ -1,0 +1,45 @@
+mixin listingVertical(object)
+    .thumbnail.listing-item.listing-item-vertical
+        if(object.test == 1)
+            img.of-cover.object-position.thumbnail-img.listing-item-img(src="http://placehold.it/200x200")
+        else if(object.test == 2)
+            img.of-cover.object-position.thumbnail-img.listing-item-img(src="http://placehold.it/300x900")
+        else if(object.test == 3)
+            img.of-cover.object-position.thumbnail-img.listing-item-img(src="http://placehold.it/900x300")
+        .listing-item-caption.caption.same-height
+            p.text-gray.listing-item-info Provider name
+            h3.h6.link-violet-dark.listing-item-title.text-normal: a(href="#") Ads Name Service
+            p.text-gray.listing-item-info Work title smol line
+            .clearfix
+                .pull-left
+                    +ratingShow('sm')
+                .pull-right
+                    span.text-gray 4.85 (21)
+        .thumbnail-footer.bg-gray-light
+            ul.list-unstyled.list-muted.listing-item-info.row
+                li.col-xs-4 <i class="fa fa-clock-o"></i> 32
+                li.col-xs-4.text-center <i class="fa fa-eye"></i> 328
+                li.col-xs-4.text-right: a(href="#"): i.fa.fa-heart-o
+
+mixin lisingHorizontal(object)
+    .listing-item.listing-item-horizontal
+        .row
+            .col-md-2.listing-item-img
+                if(object.test == 1)
+                    img.of-cover.object-position.listing-item-img.same-height(src="http://placehold.it/200x200")
+                else if(object.test == 2)
+                    img.of-cover.object-position.listing-item-img.same-height(src="http://placehold.it/300x900")
+                else if(object.test == 3)
+                    img.of-cover.object-position.listing-item-img.same-height(src="http://placehold.it/900x300")
+            .col-md-5.same-height.vertical-middle
+                .p-1
+                    p.text-gray.listing-item-info Provider name
+                    div
+                        h3.h6.link-violet-dark.listing-item-title.text-normal: a(href="#") Ads Name Service
+                        +ratingShow('sm')
+                    p.text-gray.listing-item-info Work title smol line
+            .col-md-4.col-sm-10.same-height.vertical-middle
+                .p-1
+                    +tags()
+            .col-md-1.col-sm-2
+                .bg-gray-light.same-height

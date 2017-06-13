@@ -1,0 +1,167 @@
+extends ../layouts/empty
+block page
+    +navbarMain()
+    +navbarMain('logged')
+    .container
+        .pt-4.pb-4
+            h2.h4.mb-2.text-light.text-muted Typography
+            .mb-3
+                h1 Heading 1
+                h2 Heading 2
+                h3 Heading 3
+                h4 Heading 4
+                h5 Heading 5
+                h6 Heading 6
+                p.lead Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            .mb-3
+                p.text-primary Text primary
+                p.text-violet-light Text violet light
+                p.text-violet-dark Text violet dark
+
+            h2.h4.mb-2.text-light.text-muted Search
+            .mb-3
+                +search()
+
+            h2.h4.mb-2.text-light.text-muted Form elements
+            .mb-3
+                .row
+                    .col-lg-6.col-md-8.col-sm-10
+                        .form-group
+                            .row
+                                .col-md-4
+                                    label.form-control-static Test input
+                                .col-md-8
+                                    input(type="text").form-control
+
+                        .form-group
+                            .row
+                                .col-md-4
+                                    label.form-control-static Test datepicker
+                                .col-md-8
+                                    .input-group
+                                        span.input-group-addon: i.fa.fa-calendar-o
+                                        input(type="text").form-control.input-date
+
+                        .form-group
+                            .row
+                                .col-md-4
+                                    label.form-control-static Test select
+                                .col-md-8
+                                    select.custom-select
+                                        option(value="0") Test item 0
+                                        option(value="1") Test item 1
+                                        option(value="2") Test item 2
+                                        option(value="3") Test item 3
+                                        option(value="4") Test item 4
+
+                        .form-group
+                            span.custom-radio
+                                input(type="radio", checked, id="test_radio", name="test_radio").custom-radio-input
+                                label(for="test_radio").custom-radio-label.text-muted Test radio
+
+                        .form-group
+                            span.custom-checkbox
+                                input(type="checkbox", checked, id="test_checkbox", name="test_checkbox").custom-checkbox-input
+                                label(for="test_checkbox").custom-checkbox-label.text-muted Test checkbox
+
+
+            h2.h4.mb-2.text-light.text-muted Bootstrap button size
+            .mb-1
+                a(href="#").btn.btn-xs.btn-primary XS button
+            .mb-1
+                a(href="#").btn.btn-sm.btn-primary SM button
+            .mb-1
+                a(href="#").btn.btn-primary MD button
+            .mb-3
+                a(href="#").btn.btn-lg.btn-primary LG button
+
+            h2.h4.mb-2.text-light.text-muted Bootstrap button color
+            .mb-3
+                .row
+                    .col-lg-2.col-md-3.col-sm-6: .mb-2: a(href="#").btn.btn-block.btn-default Default
+                    .col-lg-2.col-md-3.col-sm-6: .mb-2: a(href="#").btn.btn-block.btn-primary Primary
+                    .col-lg-2.col-md-3.col-sm-6: .mb-2: a(href="#").btn.btn-block.btn-success Success
+                    .col-lg-2.col-md-3.col-sm-6: .mb-2: a(href="#").btn.btn-block.btn-info Info
+                    .col-lg-2.col-md-3.col-sm-6: .mb-2: a(href="#").btn.btn-block.btn-warning Warning
+                    .col-lg-2.col-md-3.col-sm-6: .mb-2: a(href="#").btn.btn-block.btn-danger Danger
+
+                .row
+                    .col-lg-2.col-md-3.col-sm-6: .mb-2: a(href="#").btn.btn-block.btn-o-default Default
+                    .col-lg-2.col-md-3.col-sm-6: .mb-2: a(href="#").btn.btn-block.btn-o-primary Primary
+                    .col-lg-2.col-md-3.col-sm-6: .mb-2: a(href="#").btn.btn-block.btn-o-success Success
+                    .col-lg-2.col-md-3.col-sm-6: .mb-2: a(href="#").btn.btn-block.btn-o-info Info
+                    .col-lg-2.col-md-3.col-sm-6: .mb-2: a(href="#").btn.btn-block.btn-o-warning Warning
+                    .col-lg-2.col-md-3.col-sm-6: .mb-2: a(href="#").btn.btn-block.btn-o-danger Danger
+
+            h2.h4.mb-2.text-light.text-muted Custom Buttons
+            .row
+                .col-md-3
+                    .mb-3
+                        a(href="#").btn.btn-o-violet-light.btn-round.btn-lg.btn-block: b Outline violet light
+                .col-md-3
+                    .mb-3
+                        a(href="#").btn.btn-o-violet-dark.btn-round.btn-lg.btn-block: b Outline violet dark
+                .col-md-3
+                    .mb-3
+                        a(href="#").btn.btn-violet-light.btn-round.btn-lg.btn-block: b Violet light
+                .col-md-3
+                    .mb-3
+                        a(href="#").btn.btn-violet-light.btn-round.btn-lg.btn-block: b Violet dark
+
+                .col-md-3
+                    .mb-3
+                        a(href="#").btn.btn-primary.btn-round.btn-lg.btn-block: b Primary
+                .col-md-3
+                    .mb-3
+                        a(href="#").btn.btn-o-primary.btn-round.btn-lg.btn-block: b Outline primary
+
+            h2.h4.mb-2.text-light.text-muted Categories
+            .mb-3
+                .row
+                    .col-md-2.col-md-4.col-xs-6
+                        .mb-2
+                            +category("Title 1")
+                    .col-md-2.col-md-4.col-xs-6
+                        .mb-2
+                            +category("Title 2")
+
+            h2.h4.mb-2.text-light.text-muted Tags
+            .mb-3
+                +tags()
+
+            h2.h4.mb-2.text-light.text-muted Rating
+            .mb-2
+                +ratingEdit()
+            .mb-3
+                +ratingShow()
+
+            h2.h4.mb-2.text-light.text-muted Listing vertical
+
+            .row
+                .col-md-2.col-sm-6
+                    .mb-3
+                        +listingVertical({
+                            test: 1
+                        })
+                .col-md-2.col-sm-6
+                    .mb-3
+                        +listingVertical({
+                            test: 2
+                        })
+                .col-md-2.col-sm-6
+                    .mb-3
+                        +listingVertical({
+                            test: 3
+                        })
+
+            h2.h4.mb-2.text-light.text-muted Listing horizontal
+            .mb-1
+                .row
+                    .col-lg-10
+                        +lisingHorizontal({
+                            test: 1
+                        })
+
+
+    include ../includes/footer

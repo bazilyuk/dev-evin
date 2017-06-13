@@ -1,0 +1,38 @@
+.category {
+  &-link {
+    width: 100%;
+    padding-top: 100%;
+    display: block;
+    background: #fafafa;
+    border: 1px solid #F1F1F1;
+    border-radius: @border-radius-large;
+    text-align: center;
+    color: @brand-violet-light;
+    position: relative;
+    cursor: pointer;
+
+    &-inner {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+    }
+    &-title {
+      display: block;
+    }
+    .fa {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+    }
+
+    &:hover,
+    &:focus {
+      color: @brand-violet-light;
+      -webkit-box-shadow: 0 2px 17px 0 rgba(193,157,236,1) !important;
+      box-shadow: 0 2px 17px 0 rgba(193,157,236,1) !important;
+    }
+  }
+}

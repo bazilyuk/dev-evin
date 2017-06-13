@@ -1,0 +1,81 @@
+extends ../layouts/base
+block page
+    .section.section-home-1.vertical-middle
+        .container
+            .row
+                .col-lg-10.col-lg-offset-1
+                    h1.text-center.text-white.font-roboto.mt-0.mb-5 Find your event today
+                    +search()
+    .section.section-home-2.pt-3.pb-4
+        .container
+            h2.h6.text-light.text-violet-dark.text-center.mb-3 Here are the most popular topics for use in events
+            .row.horizontal-md-center
+                .col-md-2.col-xs-6
+                    .mb-3
+                        +category("Title 1")
+                .col-md-2.col-xs-6
+                    .mb-3
+                        +category("Title 2")
+                .col-md-2.col-xs-6
+                    .mb-3
+                        +category("Title 3")
+                .col-md-2.col-xs-6
+                    .mb-3
+                        +category("Title 4")
+                .col-md-2.col-xs-6
+                    .mb-3
+                        +category("Title 5")
+
+            .text-center
+                +tags()
+
+    .section.section-home-3.bg-violet-light.pt-3.pb-5.vertical-middle
+        .container
+            .row
+                .col-lg-10.col-lg-offset-1
+                    .row
+                        .col-md-6.same-height.vertical-middle
+                            div
+                                h2.h1.text-white.mt-0 Lorem Ipsum is simply dummy
+                                p.lead.text-white.mb-10 Lorem Ipsum is simply dummy text of the
+                                a(href="#").btn.btn-lg.btn-o-violet-dark.btn-round.btn-indent How it work
+                        .col-md-6.same-height.vertical-middle.pt-3.pb-3
+                            img(src="images/section-home-3-img.png").img-responsive.center-block
+
+    .section.section-home-4.pt-2.pb-3
+        .container
+            h2.h6.text-light.text-violet-dark.text-center.mb-3 Top adverts
+            .row.horizontal-md-center
+                .col-md-2.col-xs-12
+                    +listingVertical({
+                        test: 1
+                    })
+                .col-md-2.col-xs-12
+                    +listingVertical({
+                        test: 2
+                    })
+                .col-md-2.col-xs-12
+                    +listingVertical({
+                        test: 3
+                    })
+                .col-md-2.col-xs-12
+                    +listingVertical({
+                        test: 1
+                    })
+                .col-md-2.col-xs-12
+                    +listingVertical({
+                        test: 2
+                    })
+
+    .section.section-home-5.bg-violet-light.pt-3.pb-5.vertical-middle
+        .container
+            .row
+                .col-lg-10.col-lg-offset-1
+                    .row
+                        .col-md-6.same-height.vertical-middle
+                            div
+                                h2.h1.text-white.mt-0 Lorem Ipsum is simply dummy text
+                                p.lead.text-white.mb-10 Lorem Ipsum is simply dummy text of the printing and typesetting
+                                a(href="#").btn.btn-lg.btn-o-violet-dark.btn-round.btn-indent How it work
+                        .col-md-6.same-height.vertical-middle.pt-3.pb-3
+                            img(src="images/section-home-5-img.png").img-responsive.center-block

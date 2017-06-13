@@ -1,0 +1,23 @@
+// Button outline mixin
+.button-outline(@color) {
+  color: @color;
+  background: transparent;
+  border: 1px solid @color;
+
+  &:hover,
+  &:focus {
+    color: @brand-white;
+  }
+
+  &:hover {
+    color: @brand-white;
+    background-color: @color;
+    border-color: @color;
+  }
+  &:focus,
+  &:active {
+    color: @brand-white;
+    background-color: darken(@color, 10%);
+    border-color: darken(@color, 10%);
+  }
+}

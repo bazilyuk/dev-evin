@@ -1,0 +1,13 @@
+mixin search()
+    .row
+        .col-lg-11.col-sm-10
+            .form-group
+                .input-group.input-group-lg.input-group-round
+                    input(type="text", placeholder="Find event").form-control
+                    span.input-group-addon: i.fa.fa-map-marker
+                    input(type="text", placeholder="All USA").form-control
+                    span.input-group-addon: i.fa.fa-calendar-o
+                    input(type="text", placeholder="Your Date").form-control.input-date
+        .col-lg-1.col-sm-2
+            .form-group
+                button(type="button").btn.btn-primary.btn-lg.btn-round.btn-block: i.fa.fa-search

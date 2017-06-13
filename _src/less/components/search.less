@@ -1,0 +1,35 @@
+.search-dropdown.dropdown-menu {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: darken(@navbar-primary-bg, 10%);
+  .form-control {
+    font-weight: 400;
+    border-color: transparent;
+    background-color: transparent;
+    color: @brand-white;
+    &::-webkit-input-placeholder {color: @brand-white;}
+    &::-moz-placeholder          {color: @brand-white;}
+    &:-moz-placeholder           {color: @brand-white;}
+    &:-ms-input-placeholder      {color: @brand-white;}
+  }
+  @media(max-width: @screen-xs-max) {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 10px @navbar-padding-horizontal;
+    .form-control {
+      border: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media(min-width: @screen-sm-min) {
+    width: 300px;
+    top: 0;
+    left: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    include ../mixins/mixins
+    include ../includes/head
+    body
+        +navbarMain()
+        block page
+
+        // footer
+        include ../includes/footer
+        // footer end
+
+        // modals
+        include ../includes/modals
+        // modals end
+
+        // scripts
+        include ../includes/scripts
+        // scripts end

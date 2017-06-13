@@ -1,0 +1,38 @@
+.listing {
+  &-item {
+    &-info {
+      margin-bottom: 4px;
+    }
+    &-title {
+      margin: 0 0 8px;
+    }
+    &.listing-item-vertical {
+      .listing-item {
+        &-img {
+          height: 165px;
+        }
+        &-info {
+          margin: 0;
+          > li {
+            padding: 0;
+          }
+        }
+      }
+    }
+    &.listing-item-horizontal {
+      border: 1px solid #F1F1F1;
+      .listing-item {
+        &-img {
+          height: 200px;
+          @media(min-width: @screen-md-min) {
+            height: 100px;
+            padding-right: 0;
+          }
+        }
+        &-title {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+mixin ratingEdit(size)
+    if(size == 'sm')
+        input(type="number", data-max="5" data-min="1", value="4", data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o", data-readony="true").rating-input.rating-input-sm
+    else if(!size || size == 'lg')
+        input(type="number", data-max="5" data-min="1", value="4", data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o", data-readony="true").rating-input.rating-input-lg
+
+mixin ratingShow(size)
+    if(size == 'sm')
+        input(type="number", data-max="5" data-min="1", value="4", data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o", data-readony="true").rating-input.rating-input-sm
+    else if(!size || size == 'lg')
+        input(type="number", data-max="5" data-min="1", value="4", data-icon-lib="fa" data-active-icon="fa-star" data-inactive-icon="fa-star-o", data-readony="true").rating-input.rating-input-lg
